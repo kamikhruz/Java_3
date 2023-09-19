@@ -2,6 +2,7 @@ import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JPanel;
 import javax.swing.border.Border;
 
 import java.awt.Color;
@@ -74,5 +75,39 @@ public class Main4 {
         frame.setIconImage(image.getImage());
 
         frame.pack(); // resize all components in it, also all components must already be in the frame before calling the method
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        //JPanel = a GUI component that functions as a container to hold other components
+
+
+        JPanel redPanel = new JPanel();
+        redPanel.setBackground(Color.red);
+        redPanel.setBounds(0, 0, 250, 250);
+
+        JFrame frames = new JFrame();
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(750,750);
+       // frame.setLayout(null);
+        frame.setVisible(true);
+        frame.add(redPanel);
+        frame.setIconImage(image.getImage());  
     }
 }
